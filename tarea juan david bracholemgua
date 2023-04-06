@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<time.h>
+struct producto{
+	int codigo;
+	Descripción de Char[40];
+	flotador precioso;
+}productos[5];
+escribir_productos nulo (){
+	for(int i=0; i<5; i++){
+	   fflush(stdin);
+	   srand(time(NULL));
+ productos[i]. codigo=rand();
+		printf("Ingrese la descripcion del producto #%i: \n", i+1);
+		fflush(stdin);
+		gets(productos[i]. Descripción);
+		printf("Ingrese el precio del producto #%i: \n", i+1);
+		scanf("%f", &productos[i]. precio);
+		fflush(stdin);
+}
+}
+void imprimir_productos(struct producto a){
+   for(int i=0; i<5; i++){
+   	printf("");
+    printf("Código del producto %i : %i \n",i+1,productos[i]. Código);
+    printf("Descripcion del producto %i : %s \n",i+1,productos[i]. Descripción);
+    printf("Precio del producto %i : %f \n",i+1,productos[i]. precio);
+    printf("\n");
+   }
+}
+int main(){
+    struct producto a;
+    escribir_productos();
+    imprimir_productos a);
+    getch();
+    volver 0;
+}
